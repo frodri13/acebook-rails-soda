@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "Pages", type: :request do
-  describe "GET /about" do
+  describe "GET /video" do
     it "returns http success" do
-      get "/pages/about"
+      get "/pages/video"
       expect(response).to have_http_status(:success)
     end
   end

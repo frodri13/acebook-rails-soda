@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/video'
   get 'pages/about'
   root "posts#index"
 
