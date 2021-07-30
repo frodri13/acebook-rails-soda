@@ -29,12 +29,19 @@
 
             <div class="media-content">
               <div class="content">
-                <p>
                   <strong> <%= post.user.name %></strong>
                   
                   <% if post.user.name == current_user.name %>
-                    <%= link_to "Edit" , edit_post_path(post) %>
-                    <%= link_to "Delete" , post, method: :delete, data: { confirm: "Delete this post?" } %>
+                  
+                   <a class="button is-danger is-outlined is-small"> 
+                  <span><% link_to "Delete" , post, method: :delete, data: { confirm: "Delete this post?" } %> Delete</span>
+                  <span class="icon is-small">
+                    <i class="fa fa-times"></i>
+                  </span>
+                  </a>
+                
+        
+                  <span> <%= link_to "Edit" , edit_post_path(post) %>
                   <% end %>
                   <br>
                   <%= post.message %>

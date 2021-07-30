@@ -30,6 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bulma-rails', '~> 0.9.1'
 
 gem 'simple_form', '~> 5.1'
+gem "font-awesome-rails"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
