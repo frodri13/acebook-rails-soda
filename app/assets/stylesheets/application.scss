@@ -12,32 +12,34 @@
  *
  *= require_tree .
  *= require_self
- */
+*/
 
- @import "bulma";
+@import "bulma";
 
+// package.json, application.rb, gemfile, _navbar.erb
+@import "font-awesome";
+@import "font-awesome-compass";
  
+html {
+  background-color: #dfe3ee
+}
 
- html {
-    background-color: #dfe3ee
- }
-
- .navbar-item img {
-    max-height: 3.75rem;
-    align-items: flex-end;
+.navbar-item img {
+  max-height: 3.75rem;
+  align-items: flex-end;
 }
 
 .navbar-item {
-    align-items: center;
-    display: flex;
-    background-blend-mode: screen;
+  align-items: center;
+  display: flex;
+  background-blend-mode: screen;
 }
 
 .button.is-primary {
-    background-color: #3b5998;
-    border-color: transparent;
-    color: #fff;
-    margin: 10px;
+  background-color: #3b5998;
+  border-color: transparent;
+  color: #fff;
+  margin: 10px;
 }
 
 

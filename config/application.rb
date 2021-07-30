@@ -1,7 +1,10 @@
 require_relative 'boot'
 require "active_storage/attached"
-
+# require "font-awesome-rails/"
 require 'rails/all'
+
+require 'font-awesome-sass'
+#Import the FontAwesome styles
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -19,6 +22,3 @@ module Acebook
     # -- all .rb files in that directory are automatically loaded.
   end
 end
-
-
-
