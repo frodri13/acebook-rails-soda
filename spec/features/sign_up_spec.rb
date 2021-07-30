@@ -65,14 +65,14 @@ RSpec.feature "User Sign Up", type: :feature do
 
   scenario 'Everything is done correctly' do
 
-    visit '/users/new'
+    visit signup_path
     fill_in 'user_name', with: 'TestName'
     fill_in 'user_email', with: 'testemail2@test.com'
     fill_in 'user_password', with: 'password123'
     fill_in 'user_password_confirmation', with: 'password123'
-    click_button 'Create my account'
-
-    expect(page).to have_current_path('/users')
+    click_button "Create my account"
+    save_and_open_page
+    expect(page).to have_content("TestName")
   end
 
 end
